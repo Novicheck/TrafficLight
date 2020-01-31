@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         startButton.layer.cornerRadius = 20
     }
     
-    private func changeColor() {
+    private func changedColor() {
         switch currentLight {
         case .red:
             redView.alpha = ligthIsOn
@@ -58,6 +58,6 @@ class ViewController: UIViewController {
     
     @IBAction func selectNext(_ sender: UIButton) {
         startButton.setTitle("NEXT", for: .normal)
-        changeColor()
+        changedColor()
     }
 }
